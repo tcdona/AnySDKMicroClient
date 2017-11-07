@@ -1,4 +1,4 @@
-1. **MainActivity.java** 是微端的主（也是唯一）Activity，其中初如化了一个 WebView，并通过 `mWebView.addJavascriptInterface(anyController, "gameshell");` 将 Java 对象实例 anyController 添加为 WebView 的扩展对象，之后在 H5 中即可通过 `window.gameshell.method()` 来调用 anyController 中公开的 Java 方法。
+1. **MainActivity.java** 是微端的主（也是唯一）Activity，其中初始化了一个 WebView，并通过 `mWebView.addJavascriptInterface(anyController, "gameshell");` 将 Java 对象实例 anyController 添加为 WebView 的扩展对象，之后在 H5 中即可通过 `window.gameshell.method()` 来调用 anyController 中公开的 Java 方法。
 
 1. 下面的 **libForJava 库工程** 即是AnySDK Framework，具体是如何集成进来的请参考 http://docs.anysdk.com/integration/client-java/quick-integration/ ，如果你对 AnySDK 的原理还不了解的话，建议阅读 《[AnySDK 快速入门](http://docs.anysdk.com/rapid-experience/introduce/)》。
 
